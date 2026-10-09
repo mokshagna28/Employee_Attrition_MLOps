@@ -1,0 +1,7 @@
+
+services:
+  attrition-ml:
+    build: .
+    image: employee-attrition-ml:latest
+    container_name: attrition-compose-container
+    command: python src/train.py
